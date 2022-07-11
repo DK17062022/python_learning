@@ -12,5 +12,6 @@ if __name__ == '__main__':
     print(plus(5,2))
     print(div(10,2))
     print (0)
+    print (1)
 
 
