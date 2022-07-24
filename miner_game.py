@@ -6,7 +6,7 @@ for i in range(k):
     print('enter mine #',i+1 ,' coordinates (x y): ',end='')
     row, col = (int(j) - 1 for j in input().split())
     a[row][col] = -1
-    print(a)
+#    print(a)
 for i in range(n):
     for j in range(m):
         if a[i][j] == 0:
