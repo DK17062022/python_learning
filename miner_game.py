@@ -1,9 +1,12 @@
+print ('input field size (x y) and number of mines, use space as a separator: ', end='')
 n, m, k = (int(i) for i in input().split())
 a = [[0 for j in range(m)] for i in range(n)]
 #print(a)
 for i in range(k):
+    print('enter mine #',i+1 ,' coordinates (x y): ',end='')
     row, col = (int(j) - 1 for j in input().split())
     a[row][col] = -1
+    print(a)
 for i in range(n):
     for j in range(m):
         if a[i][j] == 0:
@@ -16,11 +19,11 @@ for i in range(n):
 for i in range(n):
     for j in range(m):
         if a[i][j] == -1:
-            print('*',end='')
+            print('*', end='')
         elif a[i][j] == 0:
-            print('.',end='')
+            print('.', end='')
         else:
-            print(a[i][j],end='')
+            print(a[i][j], end='')
     print()
 
 
